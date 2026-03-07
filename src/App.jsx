@@ -398,6 +398,7 @@ export default function F1Quiz() {
       {phase === "intro" && (
         <div className="f1">
           <div className="f1-inner">
+            <img src="/f1brain_icon_transparent.svg" alt="F1brain" style={{height:36,width:"auto",opacity:0.9,marginBottom:12}}/>
             <div className="f1-eyebrow">F1 Personality Quiz</div>
             <div className="f1-intro-title">Which F1 team are you?</div>
             <div className="f1-intro-sub">
@@ -414,7 +415,7 @@ export default function F1Quiz() {
         <div className="f1">
           <div className="f1-inner">
             <div className="f1-header-row">
-              <div className="f1-eyebrow" style={{ marginBottom: 0 }}>F1 Personality Quiz</div>
+              <div style={{display:"flex",alignItems:"center",gap:8}}><img src="/f1brain_icon_transparent.svg" alt="F1brain" style={{height:18,width:"auto",opacity:0.8}}/><div className="f1-eyebrow" style={{ marginBottom: 0 }}>F1 Personality Quiz</div></div>
               <div className="f1-counter">
                 {String(current + 1).padStart(2, "0")} / {QUESTIONS.length}
               </div>
